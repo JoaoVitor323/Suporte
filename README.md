@@ -36,13 +36,10 @@ Este projeto é um sistema simples para que usuários possam registrar reclamaç
 
 1. Clone este repositório ou baixe os arquivos:
 
-```bash
 git clone https://github.com/seuusuario/suporte.git
 Copie a pasta suporte para a pasta do XAMPP:
 
-makefile
-Copiar
-Editar
+
 C:\xampp\htdocs\
 Inicie Apache e MySQL no XAMPP Control Panel
 
@@ -51,9 +48,6 @@ Crie o banco e tabela no phpMyAdmin:
 Acesse: http://localhost/phpmyadmin
 Crie o banco suporte_db se ainda não existir e execute:
 
-sql
-Copiar
-Editar
 CREATE TABLE chamados (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
@@ -67,16 +61,12 @@ Ajuste salvar.php caso precise mudar usuário, senha ou banco
 
 Abra no navegador:
 
-arduino
-Copiar
-Editar
+
 http://localhost/suporte/index.html
 Preencha o formulário para registrar um chamado/reclamação
 
 Estrutura do projeto
-bash
-Copiar
-Editar
+
 suporte/
 ├── index.html      # Formulário web para registro dos chamados
 ├── salvar.php      # Processa e salva os dados no banco

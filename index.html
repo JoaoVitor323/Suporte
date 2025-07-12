@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulário de Contato</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="Img_Front/suporte-ao-cliente-icone-de-servico-ao-cliente-ou-logotipo-em-fundo-escuro-700-147832586.jpg"image/png">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-container">
+      <h1 class="logo">MeuSuporte</h1>
+      <ul class="nav-links">
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="form-wrapper">
+    <div class="form-container">
+      <h2>Suporte</h2>
+      <form action="salvar.php" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="numero">Numero:</label>
+        <input type="number" id="numero" name="numero" required />
+
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao" rows="5" required></textarea>
+
+        <div class="prioridade">
+          <label class="titulo-radio">Prioridade:</label>
+          <div class="opcoes-radio">
+            <label class="radio-colorida">
+              <input type="radio" name="prioridade" value="Baixa" required />
+              <span class="radio-custom verde"></span>
+              Baixa
+            </label>
+
+            <label class="radio-colorida">
+              <input type="radio" name="prioridade" value="Média" />
+              <span class="radio-custom amarelo"></span>
+              Média
+            </label>
+
+            <label class="radio-colorida">
+              <input type="radio" name="prioridade" value="Alta" />
+              <span class="radio-custom vermelho"></span>
+              Alta
+            </label>
+          </div>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

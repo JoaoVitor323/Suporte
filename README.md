@@ -65,13 +65,6 @@ Abra no navegador:
 http://localhost/suporte/index.html
 Preencha o formulário para registrar um chamado/reclamação
 
-Estrutura do projeto
-
-suporte/
-├── index.html      # Formulário web para registro dos chamados
-├── salvar.php      # Processa e salva os dados no banco
-├── style.css       # Estilos do site
-└── README.md       # Documentação
 Próximos passos recomendados
 Criar página administrativa para listar e gerenciar chamados
 
